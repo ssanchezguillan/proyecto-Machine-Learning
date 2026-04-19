@@ -23,22 +23,34 @@ Asegúrate de que el archivo:
 está en la misma carpeta que los notebooks
 
 
-3.- EJECUTAR clasificacion.ipynb
+3.- EJECUTAR preprocesado.ipynb
+Este notebook realiza el análisis exploratorio de los datos (EDA) y el preprocesado inicial. En concreto:
+
+- Análisis de valores perdidos  
+- Estudio de outliers mediante el criterio IQR  
+- Análisis de variables categóricas y continuas  
+- Estudio del desbalanceo de la variable objetivo  
+- Preparación de los datos para modelado (sin aplicar aún modelos)
+
+Este paso es necesario para comprender la estructura del dataset y justificar las decisiones metodológicas adoptadas en las etapas posteriores.
+
+
+4.- EJECUTAR clasificacion.ipynb
 Este notebook realiza el preprocesado de los datos, entrena modelos (Regresión Logística, Random Forest Gradient Boosting, SVM) y evalúa (F1-score ponderado, Matriz de confusión, Curva ROC)
 
 
-2.- EJECUTAR regresion.ipynb
+5.- EJECUTAR regresion.ipynb
 Este notebook preprocesa los datos, entrena modelos (Regresión Lineal, Ridge, Lasso, Random Forest, Gradient Boosting) y evalúa (MAE, RMSE, R²)
 
 
-3.- EJECUTAR unsupervised_learning.ipynb
+6.- EJECUTAR unsupervised_learning.ipynb
 Este notebook:
     -Aplica PCA para reducción de dimensionalidad
     -Aplica K-Means (k=3)
     -Analiza perfiles de estudiantes mediante visualización en espacio PCA y mapas de calor
 
 
-4.- INFORME
+7.- INFORME
 El análisis completo, interpretación de resultados y conclusiones se encuentran en:
             informe_machine.pdf
 
